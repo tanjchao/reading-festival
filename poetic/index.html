@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#273d38"><title>詩情畫意｜2026 臺灣閱讀節限定版</title>
+<style>
+:root{color-scheme:light;--ink:#273d38;--muted:#67736a;--accent:#9a6134;--jade:#356c5e;--gold:#cda45e;--paper:#fffaf0;--line:#ddcfb5;--danger:#a33d36}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0%,#f4ebd8 0%,transparent 47%),linear-gradient(145deg,#e5e6d8,#f5f0e4 48%,#e6e4d9);font-family:"Noto Serif TC","Microsoft JhengHei",serif;color:var(--ink);min-height:100dvh}button,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.52;cursor:not-allowed}button:focus-visible,input:focus-visible{outline:3px solid #d9a452;outline-offset:3px}
+.shell{max-width:910px;margin:0 auto;padding:16px 16px 38px}.mast{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 2px 16px;border-bottom:1px solid #cbbd9e}.brand{font-size:clamp(19px,3.2vw,27px);font-weight:800;letter-spacing:.14em}.edition{font-size:12px;color:var(--muted);letter-spacing:.08em}.mast button{border:1px solid var(--line);background:#fffbf4;border-radius:9px;padding:9px 11px;color:var(--ink)}.paper{background:rgba(255,251,242,.96);border:1px solid #d4c5a9;box-shadow:0 18px 48px #434a3e1a;border-radius:18px;margin-top:20px;padding:clamp(18px,4.5vw,38px);position:relative;overflow:hidden}.paper:before{content:"";position:absolute;inset:8px;border:1px solid #cdbb994d;border-radius:12px;pointer-events:none}h1,h2,h3,p{margin:0 0 15px}h1{font-size:clamp(29px,5vw,46px);letter-spacing:.13em}h2{font-size:clamp(23px,3.5vw,31px)}h3{font-size:19px}p{line-height:1.8}.eyebrow{color:var(--accent);letter-spacing:.2em;font-size:13px;font-weight:bold}.center{text-align:center}.subtitle{color:var(--muted)}.hero{padding:35px 0 24px}.stroke{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:20px 0}.btn{border:0;border-radius:12px;padding:14px 22px;background:var(--jade);color:white;font-weight:bold;min-height:49px;box-shadow:0 3px 0 #234c42}.btn.secondary{background:#f3e7d1;color:var(--ink);border:1px solid #cab797;box-shadow:none}.btn.warn{background:#9e5441}.btn.wide{width:100%}.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;margin-top:22px}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.rules>div{border:1px solid var(--line);background:#f7f0e3;border-radius:10px;padding:13px;text-align:center}.rules strong{display:block;font-size:23px;color:var(--jade)}label{display:block;margin:14px 0 8px;font-weight:bold}.field{width:100%;padding:14px 15px;border:1px solid #bfb299;border-radius:10px;background:#fff;font-size:17px}.hint{color:var(--muted);font-size:13px;line-height:1.65}.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:15px 0}.topic{background:#faf5e8;padding:18px 12px;border:2px solid var(--line);border-radius:12px;text-align:center;min-height:112px;display:flex;flex-direction:column;justify-content:center;gap:7px}.topic.selected{background:#e6efe7;border-color:var(--jade);box-shadow:inset 0 0 0 1px var(--jade)}.topic strong{font-size:20px}.topic small{color:var(--muted)}.error{color:var(--danger);font-weight:bold;min-height:22px}.topline{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:16px}.pill{padding:7px 12px;background:#eceddc;border:1px solid var(--line);border-radius:100px;font-size:14px}.progress{height:8px;background:#e3dbc8;border-radius:20px;overflow:hidden;margin:13px 0 20px}.progress>div{height:100%;background:var(--jade);transition:width .25s}.art-wrap{display:flex;justify-content:center;align-items:center;min-height:220px;background:#eee8dc;border:1px solid #d6c7aa;border-radius:12px;overflow:hidden;padding:8px}.art-wrap img{display:block;max-width:100%;max-height:min(48dvh,480px);width:auto;height:auto;object-fit:contain}.art-loading{display:flex;align-items:center;justify-content:center;min-height:220px;color:var(--muted)}.clock{text-align:center;font-variant-numeric:tabular-nums;font-size:26px;color:var(--accent);font-weight:bold;padding:13px 0 0}.clock small{font-size:14px;font-weight:normal}.choices{display:grid;gap:10px;margin:17px 0}.choice{border:1px solid #cbbd9f;background:#fffdf8;border-radius:11px;padding:14px 16px;line-height:1.5;text-align:left;font-size:clamp(16px,2.4vw,20px);min-height:59px;color:var(--ink)}.choice:active{background:#e0ebde}.result{background:#f5f0e4;border-left:4px solid var(--jade);padding:17px;border-radius:8px}.result.bad{border-color:#a85c52}.verdict{font-size:clamp(29px,5vw,41px);font-weight:900;line-height:1.35;text-align:center;padding:7px 0 13px}.verdict.bad{color:#b42318}.verdict.good{color:#26704d}.verse{font-size:clamp(20px,3.4vw,27px);color:#385c50;font-weight:bold;line-height:1.6}.score{font-size:clamp(46px,9vw,76px);font-weight:800;color:var(--jade);line-height:1.1}.medal{font-size:27px;color:#8d5d27;font-weight:bold}.scoreline{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:15px auto}.scoreline span{background:#f4ead6;border:1px solid var(--line);border-radius:9px;padding:9px 12px}.foot{text-align:center;font-size:12px;color:#647067;margin-top:20px}.hidden{display:none!important}@media(max-width:600px){.shell{padding:9px 10px 24px}.paper{margin-top:12px;padding:20px 16px}.mast{padding:6px 2px 12px}.edition{font-size:11px}.topic-grid{grid-template-columns:1fr}.topic{min-height:72px;flex-direction:row;align-items:center;justify-content:space-between;padding:12px 16px}.rules{gap:5px}.rules>div{padding:8px 3px;font-size:12px}.rules strong{font-size:18px}.art-wrap{min-height:175px}.art-wrap img{max-height:40dvh}.actions .btn{flex:1 1 150px}.choice{min-height:54px;padding:11px 13px}}
+.music-btn{white-space:nowrap;min-width:88px}.remember-row{display:flex;align-items:center;gap:8px;margin:10px 0;font-weight:normal}.remember-row input{width:20px;height:20px;accent-color:var(--jade)}.player-current{background:#eaf0e8;border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:12px}.player-current button{margin-left:10px;border:1px solid var(--line);background:#fffaf0;border-radius:8px;padding:7px 10px;color:var(--ink)}.mast-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.board-dialog{border:1px solid #cdbb99;border-radius:16px;padding:clamp(15px,3vw,27px);width:min(92vw,750px);max-height:87dvh;background:#fffaf0;color:var(--ink);box-shadow:0 15px 65px #0006}.board-dialog::backdrop{background:#1d2728a9}.board-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.board-head h2{margin:0;font-size:clamp(20px,3vw,27px)}.board-head .btn{min-height:40px;padding:8px 14px}.board-scroll{max-height:54dvh;overflow-y:auto}.board-table{border-collapse:collapse;width:100%;font-size:clamp(12px,2.3vw,16px)}.board-table td,.board-table th{padding:10px 6px;border-bottom:1px solid var(--line);text-align:left}.board-table th{white-space:nowrap}.board-table .num{text-align:right;font-variant-numeric:tabular-nums}.board-table tr.mine{background:#e6efe7}.submit-status{margin-top:18px;padding:15px;border:1px solid var(--line);border-radius:10px;background:#f7f0e3;line-height:1.7}.submit-status.error{border-color:#b42318;color:#9a2822}.submit-status.success{border-color:#356c5e;color:#246145}@media(max-width:600px){.mast-actions button{font-size:12px;padding:8px 7px}.board-table td,.board-table th{padding:8px 3px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head><body><div class="shell"><header class="mast"><div><div class="brand">詩情畫意</div><div class="edition">2026 臺灣閱讀節・單人限定版</div></div><div class="mast-actions"><button id="musicBtn" class="music-btn" type="button" aria-pressed="false" aria-label="播放背景音樂">♫ 播放音樂</button><button id="boardBtn" type="button">雲端排行榜</button><button id="homeBtn" type="button">返回首頁</button></div></header><main id="app" class="paper" aria-live="polite"></main><dialog id="leaderboardDialog" class="board-dialog"><div class="board-head"><h2>詩情畫意・雲端排行榜</h2><button class="btn secondary" id="closeBoard" type="button">關閉</button></div><p class="hint">三個題組共用排名｜同暱稱只顯示最佳成績；同分依總耗時、提交時間排序。</p><p id="boardState" class="hint" aria-live="polite">讀取中……</p><div id="boardRows" class="board-scroll"></div><div class="actions"><button id="refreshBoard" class="btn secondary" type="button">更新排行榜</button></div></dialog><div class="foot">賞詩・觀畫・品意境 ｜ 原版題庫與圖畫沿用，不影響原版遊戲</div></div>
+<audio id="backgroundMusic" preload="none" loop aria-hidden="true"></audio>
+<script>
+'use strict';
+const TOPICS=[{"id":"moon","name":"月下風情","folder":"月題組","questions":[{"correct":{"text":"月湧大江流。","author":"杜甫《旅夜書懷》","file":"月湧大江流.png","desc":"大江波濤洶湧，江心倒映滾滾月影，氣勢雄渾磅礴。"},"distractors":["一尊還酹江月。","未央前殿月輪高。","春江花朝秋月夜。","海上生明月。"]},{"correct":{"text":"月落烏啼霜滿天。","author":"張繼《楓橋夜泊》","file":"月落烏啼霜滿天.png","desc":"月亮西沉、烏啼聲冷，滿天霜氣籠罩江楓漁火。"},"distractors":["海上生明月。","唯見江心秋月白。","無言獨上西樓月如鉤。","載月逍遙興欲仙。"]},{"correct":{"text":"江清月近人。","author":"孟浩然《宿建德江》","file":"江清月近人.png","desc":"江水清澈見底，孤舟泊岸，月色宛若親近旅人。"},"distractors":["載月逍遙興欲仙。","一尊還酹江月。","未央前殿月輪高。","春江花朝秋月夜。"]},{"correct":{"text":"床前明月光。","author":"李白《靜夜思》","file":"床前明月光.png","desc":"明亮月光灑落床前窗欞，如秋霜般潔白寒涼。"},"distractors":["春江花朝秋月夜。","海上生明月。","唯見江心秋月白。","無言獨上西樓月如鉤。"]},{"correct":{"text":"煙籠寒水月籠沙。","author":"杜牧《泊秦淮》","file":"煙籠寒水月籠沙.png","desc":"迷濛水氣籠罩寒江，月光如薄紗般灑滿沙岸。"},"distractors":["無言獨上西樓月如鉤。","載月逍遙興欲仙。","一尊還酹江月。","未央前殿月輪高。"]}],"other":7},{"id":"farewell","name":"送別依依","folder":"送別題組","questions":[{"correct":{"text":"主人下馬客在船。","author":"白居易《琵琶行》","file":"主人下馬客在船.png","desc":"主客雙方在江邊依依話別，主人下馬相送，賓客登船啟程，營造出離情依依的動人氛圍。"},"distractors":["潯陽江頭夜送客。","山中相送罷。","相迎不道遠，直至長風沙。","下馬飲君酒，問君何所之。"]},{"correct":{"text":"行行重行行，與君生別離。","author":"《古詩十九首·行行重行行》","file":"行行重行行，與君生別離.png","desc":"一步步漸行漸遠，就此與摯愛／摯友天各一方，飽受生離之苦。"},"distractors":["下馬飲君酒，問君何所之。","山回路轉不見君。","平明送客楚山孤。","望君煙水闊，揮手淚沾巾。"]},{"correct":{"text":"西出陽關無故人。","author":"王維《送元二使安西》","file":"西出陽關無故人.png","desc":"勸君更盡一杯芳醇美酒，向西出了陽關險隘，就再也碰不到舊時相識的故人了。"},"distractors":["望君煙水闊，揮手淚沾巾。","輪臺東門送君去。","金陵子弟來相送。","潯陽江頭夜送客。"]},{"correct":{"text":"故人西辭黃鶴樓。","author":"李白《黃鶴樓送孟浩然之廣陵》","file":"故人西辭黃鶴樓.png","desc":"老友向西告別了黃鶴樓，在繁花如錦的陽春三月，乘舟順流遠赴揚州。"},"distractors":["潯陽江頭夜送客。","山中相送罷。","相迎不道遠，直至長風沙。","下馬飲君酒，問君何所之。"]},{"correct":{"text":"常存抱柱信，豈上望夫臺。","author":"李白《長干行》","file":"常存抱柱信，豈上望夫臺.png","desc":"化用古代尾生抱柱守信的典故，表達女子對遠行丈夫堅貞不二、至死不渝的深情與期盼。"},"distractors":["下馬飲君酒，問君何所之。","山回路轉不見君。","平明送客楚山孤。","望君煙水闊，揮手淚沾巾。"]}],"other":9},{"id":"follow","name":"花意盎然","folder":"花題組","questions":[{"correct":{"text":"朱雀橋邊野草花。","author":"劉禹錫《烏衣巷》","file":"朱雀橋邊野草花.png","desc":"昔日繁華的朱雀橋畔如今長滿了荒草野花，寄託繁華散盡、世事滄桑的歷史感慨。"},"distractors":["來日綺窗前，寒梅著花未。","唯見林花落，鶯啼送客聞。","妾發初覆額，折花門前劇。","映日荷花別樣紅。"]},{"correct":{"text":"夜來風雨聲，花落知多少。","author":"孟浩然《春曉》","file":"夜來風雨聲，花落知多少.png","desc":"春曉醒來想起昨夜傳來的陣陣風雨之聲，不知有多少嬌美春花已被吹打飄落。"},"distractors":["映日荷花別樣紅。","春城無處不飛花。","桃花盡日隨流水。","沾衣欲濕杏花雨。"]},{"correct":{"text":"花自飄零水自流。","author":"李清照《一剪梅》","file":"花自飄零水自流.png","desc":"落花獨自飄散零落，流水自顧潺潺東流，道出一種無可奈何的相思愁苦。"},"distractors":["沾衣欲濕杏花雨。","滿地黃花堆積。","紅藕香殘玉簟秋。","絕好岸梅清鬥月。"]},{"correct":{"text":"待到重陽日，還來就菊花。","author":"孟浩然《過故人莊》","file":"待到重陽日，還來就菊花.png","desc":"故人相約等到秋季重陽佳節之日，定要再次前來共飲美酒、漫賞金菊。"},"distractors":["絕好岸梅清鬥月。","花徑不曾緣客掃。","莫待無花空折枝。","來日綺窗前，寒梅著花未。"]},{"correct":{"text":"採菊東籬下，悠然見南山。","author":"陶淵明《飲酒·其五》","file":"採菊東籬下，悠然見南山.png","desc":"在東側竹籬下悠閒採摘秋菊，抬頭閒適遠眺南山，展現物我兩忘的超然心境。"},"distractors":["來日綺窗前，寒梅著花未。","唯見林花落，鶯啼送客聞。","妾發初覆額，折花門前劇。","映日荷花別樣紅。"]}],"other":12}];
+const SUPABASE_URL='https://qxgysajhvqjpogrsutyf.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_TvmZX_hhWXlQlxEQ4ejz5Q_UOnwedVP';
+const CLOUD_READY=SUPABASE_URL.startsWith('https://')&&SUPABASE_PUBLISHABLE_KEY.startsWith('sb_publishable_');
+const VERSION='v1.6.3'; // 雲端計分識別維持 v1.6.3，無須 SQL 更新
+const UI_VERSION='v1.6.4';
+const app=document.getElementById('app'),homeBtn=document.getElementById('homeBtn');
+const boardDialog=document.getElementById('leaderboardDialog');
+const music=document.getElementById('backgroundMusic'),musicBtn=document.getElementById('musicBtn');
+const MUSIC_URL='../music/background.mp3';
+const NICK_STORAGE_KEY='poeticFestivalRememberedNicknameV1';
+const isMobileDevice=()=>/Android.*Mobile|iPhone|iPod|Mobile/i.test(navigator.userAgent);
+let currentNickname='',musicWanted=false,musicInitialized=false,musicLoading=false,musicUserOverride=false;
+music.volume=0.45;
+let phase='home',session=null,seq=0,clockHandle=0,loadTimeout=0,selectedTopic='moon';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function topic(){return TOPICS.find(t=>t.id===selectedTopic)}
+function shuffled(a){let b=a.slice();for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
+function clearTimers(){clearInterval(clockHandle);clearTimeout(loadTimeout);clockHandle=0;loadTimeout=0}
+function elapsed(t){return Math.max(0,(performance.now()-t)/1000)}
+function artUrl(folder,file){return './images/'+encodeURIComponent(file.replace(/\.png$/i,'.webp'))}
+function getSavedNickname(){try{return localStorage.getItem(NICK_STORAGE_KEY)||''}catch(e){return ''}}
+function setSavedNickname(value){try{if(value)localStorage.setItem(NICK_STORAGE_KEY,value);else localStorage.removeItem(NICK_STORAGE_KEY)}catch(e){}}
+function updateMusicButton(){
+ const active=!music.paused&&!music.ended;
+ musicBtn.textContent=active?'♫ 停止音樂':musicWanted?'♫ 等待播放':'♫ 播放音樂';
+ musicBtn.setAttribute('aria-pressed',String(active));
+ musicBtn.setAttribute('aria-label',active?'停止背景音樂':'播放背景音樂');
+ musicBtn.title=musicWanted&&!active?'音樂載入中，或需點擊播放以符合手機瀏覽器限制':'';
+}
+async function tryPlayMusic(){
+ if(!musicWanted||!musicInitialized)return;
+ try{await music.play()}catch(e){
+   // iOS/Chrome may reject autoplay after an asynchronous image load.
+   // Keep the toggle in the "play" state so the user can initiate it with a tap.
+   musicWanted=false;
+ }
+ updateMusicButton();
+}
+function beginMusicLoad(){
+ // Called only after the active artwork has successfully rendered.
+ if(musicInitialized)return;
+ musicInitialized=true;musicLoading=true;
+ music.src=MUSIC_URL;music.preload='auto';music.load();
+ music.addEventListener('canplay',()=>{musicLoading=false;if(musicWanted)void tryPlayMusic();},{once:true});
+ music.addEventListener('error',()=>{musicLoading=false;musicWanted=false;updateMusicButton();},{once:true});
+ if(musicWanted)void tryPlayMusic();
+ updateMusicButton();
+}
+function requestMusicAfterImage(){
+ if(!musicWanted)return;
+ if(!musicInitialized){beginMusicLoad();return}
+ void tryPlayMusic();
+}
+function toggleMusic(){
+ musicUserOverride=true;
+ if(!music.paused){music.pause();musicWanted=false;updateMusicButton();return}
+ musicWanted=true;
+ // Audio may be selected before the first artwork is ready; don't fetch it yet.
+ if(musicInitialized)void tryPlayMusic();
+ updateMusicButton();
+}
+musicBtn.addEventListener('click',toggleMusic);
+music.addEventListener('play',updateMusicButton);
+music.addEventListener('pause',updateMusicButton);
+// Some browsers unlock audio only during a click/touch. Do not automatically
+// re-enable music after the visitor explicitly stopped it.
+function resumeMusicFromGesture(){if(musicWanted&&musicInitialized&&music.paused)void tryPlayMusic()}
+function home(){seq++;clearTimers();phase='home';session=null;app.innerHTML=`<div class="center hero"><p class="eyebrow">2026 臺灣閱讀節限定版</p><h1>詩情畫意</h1><p class="subtitle">以畫入詩，以詩會意。五道畫境，邀你尋覓藏在丹青之中的千古詩句。</p><div class="stroke"></div><button class="btn" id="enter">展卷挑戰</button><button class="btn secondary" id="homeBoard">查看雲端排行榜</button></div><div class="rules"><div><strong>3 題組</strong>自由選擇</div><div><strong>5 題</strong>每局挑戰</div><div><strong>100 分</strong>最高總分</div></div><p class="center hint" style="margin-top:20px">每題最多三次作答；第一次答對最高 20 分。背景音樂可由上方按鈕播放或停止。</p>`;$('enter').onclick=()=>setup();$('homeBoard').onclick=openLeaderboard}
+function setup(changePlayer=false){
+ seq++;clearTimers();phase='setup';session=null;selectedTopic='moon';
+ if(changePlayer){currentNickname='';setSavedNickname('')}
+ const remembered=currentNickname||getSavedNickname();
+ const mobile=isMobileDevice();
+ app.innerHTML=`<p class="eyebrow">第一步・準備開卷</p><h2>選擇你的詩畫旅程</h2><label for="nick">挑戰暱稱</label><input class="field" id="nick" maxlength="12" autocomplete="off" placeholder="請輸入暱稱（1～12 字）" value="${esc(remembered)}"><label class="remember-row"><input id="rememberNick" type="checkbox" ${mobile&&remembered?'checked':mobile&&!changePlayer?'checked':''}><span>在此裝置記住暱稱（自己的手機建議勾選）</span></label><p class="hint">重新挑戰會沿用本次暱稱；換人玩請點「更換玩家」。共用設備不建議勾選記住暱稱。暱稱與成績將公開顯示於雲端排行榜，請勿使用真實姓名。</p><div class="actions"><button class="btn secondary" id="changePlayer" type="button">更換玩家／清除暱稱</button></div><label>挑選一個題組</label><div class="topic-grid" id="topicGrid"></div><div id="error" class="error" role="alert"></div><div class="actions"><button class="btn wide" id="play">開始五題挑戰</button></div>`;
+ renderTopics();$('play').onclick=start;
+ $('changePlayer').onclick=()=>setup(true);
+}
+function renderTopics(){let g=$('topicGrid');g.innerHTML=TOPICS.map(t=>`<button type="button" class="topic ${t.id===selectedTopic?'selected':''}" data-topic="${t.id}" aria-pressed="${t.id===selectedTopic}"><strong>${esc(t.name)}</strong><small>5 道固定挑戰</small></button>`).join('');g.querySelectorAll('button').forEach(b=>b.onclick=()=>{selectedTopic=b.dataset.topic;renderTopics()})}
+function start(){let nickname=$('nick').value.trim().replace(/\s+/g,' ');if(!nickname||[...nickname].length>12||/[<>\x00-\x1f]/.test(nickname)){ $('error').textContent='請填寫 1～12 字的有效暱稱。';return}currentNickname=nickname;if($('rememberNick').checked)setSavedNickname(nickname);else setSavedNickname('');if(!musicUserOverride)musicWanted=true;updateMusicButton();let t=topic();session={id:(crypto.randomUUID?crypto.randomUUID():String(Date.now())+'-'+Math.random()),nickname,topic:t,index:0,questions:shuffled(t.questions),scoreUnits:0,correct:0,totalSeconds:0,records:[],attempts:[],submitted:false,submitting:false,submitError:'',rank:null,imageCache:new Map()};showImage()}
+function frame(){const s=session;return `<div class="topline"><span class="pill">${esc(s.topic.name)}</span><span class="pill">第 ${s.index+1}／5 題</span><span class="pill">目前 ${(Math.round(s.scoreUnits/1000)/10).toFixed(1)} 分</span></div><div class="progress"><div style="width:${s.index/5*100}%"></div></div>`}
+// Progressive preload: prioritize the visible artwork; fetch later artworks sequentially in the background.
+function fetchArtwork(s,index){
+  if(s.imageCache.has(index))return s.imageCache.get(index).promise;
+  const img=new Image();
+  img.alt='請欣賞詩詞意境畫作並猜測詩句';img.decoding='async';
+  const entry={img,status:'loading',promise:null};
+  entry.promise=new Promise((resolve,reject)=>{
+    img.onload=()=>{entry.status='ready';resolve(img)};
+    img.onerror=()=>{entry.status='error';reject(new Error('圖片載入失敗'))};
+    img.src=artUrl(s.topic.folder,s.questions[index].correct.file);
+  });
+  s.imageCache.set(index,entry);
+  return entry.promise;
+}
+function preloadFollowing(s,index){
+  if(session!==s||index>=s.questions.length)return Promise.resolve();
+  // Finish the five lightweight artwork downloads before fetching the 2 MB music file.
+  return fetchArtwork(s,index).catch(()=>null).then(()=>preloadFollowing(s,index+1));
+}
+function showImage(){
+  clearTimers();phase='loading';
+  const token=++seq,s=session,index=s.index;
+  const retryView=s.attempts.length>0;
+  app.innerHTML=frame()+`<p class="eyebrow">第一階段・賞畫尋詩</p><h2>這幅畫，藏著哪一句詩？</h2><p class="hint center">第 ${s.attempts.length+1} 次觀畫／最多三次</p><div id="artWrap" class="art-wrap"><div class="art-loading">畫作載入中，計時尚未開始……</div></div><div class="clock" id="clock">等待畫作</div><p class="center subtitle" id="photoHint">${retryView?'重新觀畫可立即作答，不必再等 5 秒。':'圖片成功載入後開始計時，前 5 秒不能作答。音樂若未自動播放，可點頂端「播放音樂」。'}</p><div class="actions"><button class="btn wide" id="know" disabled>我知道了</button></div>`;
+  // Reuse an already downloaded picture, or wait for a background download in progress.
+  if(s.imageCache.get(index)?.status==='error')s.imageCache.delete(index);
+  fetchArtwork(s,index).then(img=>{
+    if(token!==seq||session!==s||phase!=='loading')return;
+    clearTimeout(loadTimeout);
+    $('artWrap').replaceChildren(img);
+    s.loadedImage=img;
+    phase='view';s.viewStart=performance.now();
+    // Start preloading the next picture only AFTER the current picture is visible.
+    preloadFollowing(s,index+1).then(()=>{if(session===s&&!musicInitialized)beginMusicLoad()});
+    const btn=$('know');btn.onclick=showAnswers;
+    function tick(){
+      if(phase!=='view'||token!==seq)return;
+      const d=elapsed(s.viewStart);
+      $('clock').innerHTML=`賞畫 ${d.toFixed(1)} <small>秒</small>`;
+      if(retryView||d>=5){btn.disabled=false;if(!retryView)$('photoHint').textContent='已可作答。30 秒後不再獲得賞畫速度獎勵。'}
+    }
+    tick();clockHandle=setInterval(tick,80);
+  }).catch(()=>{
+    if(token===seq&&session===s&&phase==='loading')imageFailed(token);
+  });
+  loadTimeout=setTimeout(()=>{
+    if(token!==seq||session!==s||phase!=='loading')return;
+    $('photoHint').textContent='圖片仍在下載中；計時尚未開始。請確認網路連線。';
+    $('artWrap').innerHTML='<div class="art-loading">圖片下載中，請稍候……</div>';
+  },20000);
+}
+function imageFailed(token){if(token!==seq||!(phase==='loading'||phase==='view'))return;clearTimers();phase='image-error';app.innerHTML=frame()+`<h2>畫作無法載入</h2><p>目前無法確認此題圖片，為避免影響公平計分，遊戲已暫停，尚未開始計時，也不會替換成其他圖片。</p><p class="hint">請檢查網路連線，然後重試。重試時會重新載入本題圖片、重新開始看圖計時。</p><div class="actions"><button class="btn" id="retry">重試載入</button><button class="btn secondary" id="quit">返回首頁</button></div>`;$('retry').onclick=showImage;$('quit').onclick=home}
+// 分數以萬分之一分的整數運算；僅五題總和完成後四捨五入到 0.1 分。
+// 第一次強制觀畫的 5000ms 不扣速度分，其餘所有嘗試時間皆累計。
+function scoreParts(attempts){
+ const viewMs=attempts.reduce((n,a)=>n+a.view_ms,0);
+ const answerMs=attempts.reduce((n,a)=>n+a.answer_ms,0);
+ const extraViewMs=Math.max(0,viewMs-5000);
+ return {viewMs,answerMs,
+   viewUnits:Math.max(0,50000-2*extraViewMs),
+   answerUnits:Math.max(0,50000-5*answerMs)};
+}
+function displayUnits(n){return (n/10000).toFixed(2)}
+function showAnswers(){
+ if(phase!=='view')return;
+ resumeMusicFromGesture();
+ const s=session,viewMs=Math.floor(elapsed(s.viewStart)*1000);
+ if(s.attempts.length===0&&viewMs<5000)return;
+ clearTimers();s.viewMs=viewMs;phase='answer';
+ const q=s.questions[s.index],options=shuffled([q.correct.text,...q.distractors]);
+ app.innerHTML=frame()+`<p class="eyebrow">第二階段・第 ${s.attempts.length+1} 次作答</p><h2>選出畫作對應的詩句</h2><div class="art-wrap" id="answerArt"></div><div class="clock" id="clock">10.0 <small>秒</small></div><div id="choices" class="choices">${options.map((p,i)=>`<button class="choice" data-index="${i}" type="button">${esc(p)}</button>`).join('')}</div><p class="center hint">本題最多三次作答；三次作答都以累積觀畫、作答時間計算速度獎勵；基本分依次為 10、5、2.5 分。</p>`;
+ $('answerArt').replaceChildren(s.loadedImage);
+ s.answerStart=performance.now();
+ Array.from($('choices').children).forEach((b,i)=>b.onclick=()=>submitAnswer(options[i]));
+ function tick(){if(phase!=='answer')return;const d=elapsed(s.answerStart);$('clock').innerHTML=`${Math.max(0,10-d).toFixed(1)} <small>秒</small>`;if(d>=10)submitAnswer(null)}
+ tick();clockHandle=setInterval(tick,40);
+}
+function submitAnswer(choice){
+ if(phase!=='answer')return;
+ const s=session,q=s.questions[s.index];
+ const rawAnswerMs=Math.floor(elapsed(s.answerStart)*1000);
+ const timedOut=choice===null||rawAnswerMs>10000;
+ phase='grading';clearTimers();
+ const answerMs=Math.min(rawAnswerMs,10000),viewMs=s.viewMs;
+ const correct=!timedOut&&choice===q.correct.text;
+ s.attempts.push({choice:timedOut?null:choice,view_ms:viewMs,answer_ms:answerMs});
+ s.totalSeconds+=(viewMs+answerMs)/1000;
+ const attempt=s.attempts.length;
+ if(!correct && attempt<3){
+   // 顯示失敗回饋，接著自動返回同一張圖，無須再等五秒。
+   app.innerHTML=frame()+`<div class="center" role="status"><div class="verdict bad">${timedOut?'⌛ 作答逾時！':'✕ 答錯了！'}</div><p class="subtitle">第 ${attempt} 次作答未成功，本題還有 ${3-attempt} 次機會。</p><p>將自動返回原畫，再觀察一次。</p><p class="hint">已作答的詩句不會揭曉正解。</p></div>`;
+   const token=++seq;
+   setTimeout(()=>{if(seq!==token||session!==s||phase!=='grading')return;showImage()},1100);
+   return;
+ }
+ const totals=scoreParts(s.attempts);
+ const v=correct?totals.viewUnits:0;
+ const a=correct?totals.answerUnits:0;
+ const base=attempt===1?100000:attempt===2?50000:25000;
+ const units=correct?base+v+a:0;
+ s.scoreUnits+=units;
+ if(correct)s.correct++;
+ s.records.push({file:q.correct.file,attempts:s.attempts.map(x=>({...x})),points_units:units,correct});
+ s.attempts=[];phase='reveal';
+ const verdict=correct?'✓ 答對了！':timedOut?'⌛ 作答逾時！':'✕ 答錯了！';
+ const breakdown=correct?`第 ${attempt} 次答對基本分 ${displayUnits(base)}　＋　累積看圖獎勵 ${displayUnits(v)}　＋　累積作答獎勵 ${displayUnits(a)}`:'三次均未答對，本題 0 分';
+ app.innerHTML=frame()+`<p class="eyebrow">第三階段・揭曉詩境</p><div class="verdict ${correct?'good':'bad'}" role="status">${verdict}</div><div class="result ${correct?'':'bad'}"><p class="hint">正確詩句</p><p class="verse">${esc(q.correct.text)}</p><p><strong>${esc(q.correct.author)}</strong></p><p>${esc(q.correct.desc)}</p><div class="stroke"></div><p>第 ${attempt} 次作答結果：${correct?'答對':timedOut?'逾時':'答錯'}　｜　本題 <strong>${displayUnits(units)} 分</strong></p><p class="hint">${breakdown}</p><p class="hint">累積賞畫 ${(totals.viewMs/1000).toFixed(2)} 秒（首次強制 5 秒不扣分）　｜　累積作答 ${(totals.answerMs/1000).toFixed(2)} 秒</p></div><div class="actions"><button class="btn wide" id="next">${s.index===4?'查看挑戰成果':'下一題'}</button></div>`;
+ $('next').onclick=()=>{if(phase!=='reveal')return;s.index++;if(s.index===5)finish();else showImage()};
+}
+function title(score){if(score===100)return '文學宗師冠群豪';if(score>=90)return '文學大師';if(score>=70)return '詩文達人';if(score>=40)return '文學探索者';return '閱讀新秀'}
+function cloudHeaders(){return {'apikey':SUPABASE_PUBLISHABLE_KEY,'Content-Type':'application/json','Accept':'application/json'}}
+async function cloudRequest(path,options={}){
+ if(!CLOUD_READY)throw new Error('雲端設定尚未完成');
+ const response=await fetch(SUPABASE_URL+'/rest/v1/'+path,{...options,headers:{...cloudHeaders(),...(options.headers||{})},cache:'no-store'});
+ if(!response.ok){let d='';try{d=await response.text()}catch(_){}throw new Error('雲端 HTTP '+response.status+(d?'：'+d.slice(0,180):''))}
+ return response.json();
+}
+function scoreRows(s){return s.records.map(r=>({file:r.file,attempts:r.attempts}))}
+async function uploadScore(s){
+ if(s.submitting||s.submitted)return;
+ s.submitting=true;s.submitError='';updateSubmitUI(s);
+ try{
+  const result=await cloudRequest('rpc/submit_poetic_festival_score',{method:'POST',body:JSON.stringify({p_run_id:s.id,p_player_name:s.nickname,p_topic_id:s.topic.id,p_answers:scoreRows(s),p_version:VERSION})});
+  if(!Array.isArray(result)||!result[0])throw new Error('雲端沒有回傳成績結果');
+  const saved=result[0];
+  s.submitted=true;s.rank=Number(saved.rank);s.savedScore=Number(saved.total_score)/10;
+  s.savedTimeMs=Number(saved.total_ms);s.savedCorrect=Number(saved.correct_count);
+  // SQL is authoritative. A rounding-edge difference is displayed transparently.
+ }catch(e){s.submitError=e?.message||String(e)}finally{s.submitting=false;updateSubmitUI(s)}
+}
+function updateSubmitUI(s){
+ if(session!==s||phase!=='done')return;
+ const node=$('submitStatus');if(!node)return;
+ node.className='submit-status'+(s.submitted?' success':s.submitError?' error':'');
+ if(s.submitted)node.textContent=`✓ 成績已成功上傳！雲端總分 ${s.savedScore.toFixed(1)} 分，總耗時 ${(s.savedTimeMs/1000).toFixed(2)} 秒，此暱稱最佳成績目前排名第 ${s.rank} 名。`;
+ else if(s.submitting)node.textContent='成績正在上傳雲端，請稍候……';
+ else if(s.submitError)node.textContent='成績尚未成功上傳：'+s.submitError+'。請使用「重新提交」保留同一局識別碼安全重試。';
+ else node.textContent='準備上傳成績……';
+ const retry=$('retryUpload');if(retry){retry.hidden=!!(s.submitted||s.submitting);retry.disabled=s.submitting}
+ const again=$('again');if(again)again.disabled=s.submitting;
+ const homeAgain=$('homeAgain');if(homeAgain)homeAgain.disabled=s.submitting;
+}
+async function loadLeaderboard(){
+ const state=$('boardState'),target=$('boardRows');
+ state.textContent='雲端排行榜讀取中……';target.innerHTML='';
+ try{
+  const list=await cloudRequest('poetic_festival_best_scores?select=rank,run_id,player_name,topic_id,score_tenths,total_ms,finished_at&order=rank.asc&limit=20');
+  state.textContent='目前顯示前 '+list.length+' 名（同一暱稱僅顯示最佳成績，全部挑戰仍保留於雲端）。';
+  const names={moon:'月下風情',follow:'花意盎然',farewell:'送別依依'};
+  target.innerHTML=list.length?`<table class="board-table"><thead><tr><th>名次</th><th>暱稱</th><th>題組</th><th class="num">分數</th><th class="num">耗時</th></tr></thead><tbody>${list.map((r,i)=>`<tr class="${r.run_id===session?.id?'mine':''}"><td>${Number(r.rank)}</td><td>${esc(r.player_name)}</td><td>${esc(names[r.topic_id]||r.topic_id)}</td><td class="num"><strong>${(Number(r.score_tenths)/10).toFixed(1)}</strong></td><td class="num">${(Number(r.total_ms)/1000).toFixed(2)}秒</td></tr>`).join('')}</tbody></table>`:'<p class="center hint">目前還沒有完整挑戰的成績。</p>';
+ }catch(e){state.textContent='無法讀取雲端排行榜：'+(e.message||e)+'。請檢查網路，若仍無法讀取請確認已執行最新版排行榜修正 SQL。'}
+}
+function openLeaderboard(){if(!boardDialog.open)boardDialog.showModal();void loadLeaderboard()}
+document.getElementById('boardBtn').onclick=openLeaderboard;
+document.getElementById('closeBoard').onclick=()=>boardDialog.close();
+document.getElementById('refreshBoard').onclick=()=>void loadLeaderboard();
+function finish(){seq++;clearTimers();phase='done';const s=session;
+ app.innerHTML=`<div class="center"><p class="eyebrow">五題挑戰完成</p><h2>開卷有益・詩意盈懷</h2><p>${esc(s.nickname)}　｜　${esc(s.topic.name)}</p><div class="stroke"></div><div class="score">${(Math.round(s.scoreUnits/1000)/10).toFixed(1)}<small style="font-size:18px"> / 100</small></div><p class="medal">✦ ${title(Math.round(s.scoreUnits/1000)/10)} ✦</p><div class="scoreline"><span>答對 ${s.correct}／5 題</span><span>挑戰計時 ${s.totalSeconds.toFixed(2)} 秒</span></div><p class="hint">挑戰計時加總五題所有嘗試的看圖與作答時間，不包含圖片下載及賞析閱讀時間。</p><div id="submitStatus" class="submit-status" role="status">準備上傳成績……</div><div class="actions"><button class="btn secondary" id="retryUpload" hidden>重新提交</button><button class="btn secondary" id="showBoard">查看雲端排行榜</button><button class="btn" id="again">重新挑戰</button><button class="btn secondary" id="homeAgain">返回首頁</button></div></div>`;
+ $('retryUpload').onclick=()=>void uploadScore(s);$('showBoard').onclick=openLeaderboard;
+ $('again').onclick=()=>setup();$('homeAgain').onclick=home;void uploadScore(s);
+}
+homeBtn.onclick=()=>{if(phase==='done'&&session?.submitting){alert('成績正在上傳，請稍候。');return}if(phase==='view'||phase==='answer'||phase==='reveal'||phase==='loading'){if(!confirm('返回首頁會放棄本局尚未完成的挑戰，確定嗎？'))return}home()};updateMusicButton();home();
+</script></body></html>
